@@ -1,0 +1,76 @@
+<!-- The simple login form leverages internal css adn javascript  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Page</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		form {
+			background-color: #ffffff;
+			max-width: 400px;
+			margin: 20px auto;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+		}
+		h2 {
+			text-align: center;
+			color: #333333;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+			color: #666666;
+		}
+		input[type="text"], input[type="password"] {
+			padding: 10px;
+			margin-bottom: 20px;
+			width: 100%;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+		}
+		button[type="submit"] {
+			padding: 10px;
+			width: 100%;
+			background-color: blue;
+			color: #ffffff;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		button[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<h2>Login Form</h2>
+		<label for="username">Username</label>
+		<input type="text" id="username" name="username" placeholder="Enter Username">
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password" placeholder="Enter Password">
+		<button type="submit" onclick="login()">Login</button>
+	</form>
+
+	<script>
+		function login() {
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+			if (username == "richard" && password == "pass") {
+				alert("Logged In successful");
+			} else {
+				alert("Invalid credentials");
+			}
+		}
+	</script>
+</body>
+</html>
