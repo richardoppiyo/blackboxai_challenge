@@ -1,3 +1,5 @@
+//  Make sure your environment can run nodejs. Use npm install and follow prompts to set up th node project
+//  Install the libraries needed
 //  Require the archiver and fs modules.
 //  Create a write stream, create a new instance of archiver with the zip format
 //  Pipe the archive to the output file using the pipe method.
